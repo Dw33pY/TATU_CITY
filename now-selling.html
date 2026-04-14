@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Now Selling | Residential & Commercial Properties at Tatu City, Kenya</title>
+<meta name="description" content="Explore properties now selling at Tatu City — Kijani Ridge plots, Jabali Towers luxury apartments, Porini Point nature apartments, and SEZ business locations."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<a href="#main" class="skip">Skip to main content</a>
+<div id="cur" aria-hidden="true"></div>
+<div id="ring" aria-hidden="true"></div>
+<div id="prog" aria-hidden="true"></div>
+
+<div id="loader" role="progressbar" aria-label="Loading">
+  <div class="ld-wrap" id="ldw">
+    <svg width="80" height="65" viewBox="0 0 80 65" fill="none">
+      <ellipse cx="40" cy="18" rx="22" ry="15" fill="#e8521a"/>
+      <ellipse cx="26" cy="24" rx="14" ry="10" fill="#e8521a"/>
+      <ellipse cx="54" cy="24" rx="14" ry="10" fill="#e8521a"/>
+      <rect x="36" y="34" width="8" height="16" fill="#c9420a" rx="1.5"/>
+      <rect x="24" y="48" width="32" height="4" fill="#c9420a" rx="2"/>
+    </svg>
+    <div class="ld-type">TATU<s>.</s>CITY</div>
+    <div class="ld-sub">Live &middot; Work &middot; Play</div>
+  </div>
+  <div class="ld-bw"><div class="ld-b" id="ldb"></div></div>
+  <div class="ld-pct" id="ldp">0%</div>
+</div>
+
+<nav id="mob" aria-label="Mobile navigation">
+  <ul style="list-style:none">
+    <li class="mi"><a href="now-selling.html" class="ml" style="color:var(--o)">Now Selling</a></li>
+    <li class="mi"><a href="kijani-ridge.html" class="ml" style="font-size:clamp(1rem,3.5vw,1.6rem);color:rgba(245,240,232,.6);padding:.6rem 0">&nbsp;&nbsp;Kijani Ridge</a></li>
+    <li class="mi"><a href="jabali-towers.html" class="ml" style="font-size:clamp(1rem,3.5vw,1.6rem);color:rgba(245,240,232,.6);padding:.6rem 0">&nbsp;&nbsp;Jabali Towers</a></li>
+    <li class="mi"><a href="porini-point.html" class="ml" style="font-size:clamp(1rem,3.5vw,1.6rem);color:rgba(245,240,232,.6);padding:.6rem 0">&nbsp;&nbsp;Porini Point</a></li>
+    <li class="mi"><a href="business.html" class="ml" style="font-size:clamp(1rem,3.5vw,1.6rem);color:rgba(245,240,232,.6);padding:.6rem 0">&nbsp;&nbsp;Business Locations</a></li>
+    <li class="mi"><a href="gallery.html" class="ml">Gallery</a></li>
+    <li class="mi"><a href="news.html" class="ml">News</a></li>
+    <li class="mi"><a href="why-tatu.html" class="ml">Why Choose Tatu</a></li>
+    <li class="mi"><a href="tatu-reach.html" class="ml">Tatu Reach</a></li>
+    <li class="mi"><a href="careers.html" class="ml">Careers</a></li>
+    <li class="mi"><a href="contact.html" class="ml">Contact</a></li>
+  </ul>
+  <div class="mf">&copy; 2026 Tatu City &middot; A Rendeavour Development</div>
+</nav>
+
+<header id="nav" role="banner">
+  <a href="index.html" class="n-logo hoverable">
+    <svg style="height:44px" viewBox="0 0 60 50" fill="none">
+      <ellipse cx="30" cy="14" rx="17" ry="11" fill="#e8521a"/>
+      <ellipse cx="20" cy="18" rx="11" ry="8" fill="#e8521a"/>
+      <ellipse cx="40" cy="18" rx="11" ry="8" fill="#e8521a"/>
+      <rect x="27" y="26" width="6" height="13" fill="#c9420a" rx="1"/>
+      <rect x="18" y="37" width="24" height="3" fill="#c9420a" rx="1.5"/>
+    </svg>
+    <div><div class="n-lt">TATU<s>.</s>CITY</div><div class="n-ls">Live &middot; Work &middot; Play</div></div>
+  </a>
+  <ul class="n-ul">
+    <li><a href="index.html">Home</a></li>
+    <li class="act"><a href="now-selling.html">Now Selling ▾</a>
+      <ul class="n-dd"><li><a href="kijani-ridge.html">Kijani Ridge</a></li><li><a href="jabali-towers.html">Jabali Towers</a></li><li><a href="porini-point.html">Porini Point</a></li><li><a href="now-selling.html">Kofinaf Residences</a></li><li><a href="now-selling.html">The Link</a></li><li><a href="business.html">Business Locations</a></li></ul>
+    </li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="why-tatu.html">Why Choose Tatu</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="n-cta hoverable">Enquire Now</a>
+  <button class="ham" id="ham"><span></span><span></span><span></span></button>
+</header>
+
+<div class="fabs">
+  <a href="https://wa.me/741551669" class="fab fab-wa hoverable" target="_blank">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+  </a>
+  <button class="fab fab-up hoverable" id="ftop">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+</div>
+
+<main id="main">
+
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image: linear-gradient(145deg, #04080a 0%, #0d1e18 35%, #163028 65%, #081412 100%);"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <div class="page-hero-label">Find Your Perfect Place</div>
+    <h1 class="page-hero-title">Now Selling</h1>
+    <p class="page-hero-sub">Premium residential and commercial properties at Tatu City</p>
+  </div>
+</section>
+
+<!-- RESIDENTIAL PROPERTIES -->
+<section style="padding:6rem 4rem 3rem;background:var(--dk)">
+  <div style="max-width:1440px;margin:0 auto">
+    <div class="sl-tag">Residential Opportunities</div>
+    <h2 class="st" style="margin-bottom:2rem">Find Your <em>Dream Home</em></h2>
+  </div>
+</section>
+
+<section style="padding:0 4rem 6rem;background:var(--dk)">
+  <div class="pr-g" style="max-width:1440px;margin:0 auto">
+    
+    <!-- Kijani Ridge -->
+    <article class="pr pt rv-s hoverable">
+      <div class="pr-bg" style="background-image:linear-gradient(155deg,#0a1a10,#1a4a2e,#2d7a50)"></div>
+      <div class="pr-sh"></div>
+      <div class="pr-body">
+        <span class="pr-cat">Residential &middot; Land Plots</span>
+        <h3 class="pr-n">Kijani Ridge</h3>
+        <p class="pr-d">Naturally exclusive living on 350+ acres with serviced ¼ and ½ acre plots, clubhouse, and dam views.</p>
+        <a href="kijani-ridge.html" class="pr-l hoverable">Discover Kijani Ridge →</a>
+      </div>
+    </article>
+    
+    <!-- Jabali Towers -->
+    <article class="pr rv-s hoverable">
+      <div class="pr-bg" style="background-image:linear-gradient(155deg,#080d14,#121e30,#1e3560)"></div>
+      <div class="pr-sh"></div>
+      <div class="pr-body">
+        <span class="pr-cat">Apartments &middot; Luxury</span>
+        <h3 class="pr-n">Jabali Towers</h3>
+        <p class="pr-d">The pinnacle of urban living with premium finishes and panoramic city views.</p>
+        <a href="jabali-towers.html" class="pr-l hoverable">Discover Jabali →</a>
+      </div>
+    </article>
+    
+    <!-- Porini Point -->
+    <article class="pr rv-s hoverable">
+      <div class="pr-bg" style="background-image:linear-gradient(155deg,#0a1a08,#1a3a10,#2d5520)"></div>
+      <div class="pr-sh"></div>
+      <div class="pr-body">
+        <span class="pr-cat">Apartments &middot; Nature</span>
+        <h3 class="pr-n">Porini Point</h3>
+        <p class="pr-d">Wildlife sanctuary views — modern apartments in nature's finest setting.</p>
+        <a href="porini-point.html" class="pr-l hoverable">Discover Porini →</a>
+      </div>
+    </article>
+    
+    <!-- Kofinaf Tatu Residences -->
+    <article class="pr rv-s hoverable">
+      <div class="pr-bg" style="background-image:linear-gradient(155deg,#1a0d0d,#3a1a1a,#5a2a2a)"></div>
+      <div class="pr-sh"></div>
+      <div class="pr-body">
+        <span class="pr-cat">Apartments &middot; Affordable Luxury</span>
+        <h3 class="pr-n">Kofinaf Tatu Residences</h3>
+        <p class="pr-d">Contemporary 1, 2, and 3-bedroom apartments with flexible payment plans.</p>
+        <a href="contact.html" class="pr-l hoverable">Learn More →</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- COMMERCIAL PROPERTIES -->
+<section style="padding:6rem 4rem 3rem;background:var(--gd)">
+  <div style="max-width:1440px;margin:0 auto">
+    <div class="sl-tag">Commercial Opportunities</div>
+    <h2 class="st" style="margin-bottom:2rem">Space for Your <em>Business to Grow</em></h2>
+  </div>
+</section>
+
+<section style="padding:0 4rem 6rem;background:var(--gd)">
+  <div style="max-width:1440px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem">
+    
+    <!-- Tatu Industrial Park -->
+    <div class="sz-c hoverable" style="padding:2.5rem 2rem">
+      <div class="sz-ci" style="font-size:2.5rem">🏭</div>
+      <div class="sz-ct" style="font-size:.8rem">Industrial & Logistics</div>
+      <h3 style="font-family:var(--fd);font-size:1.8rem;font-weight:300;color:var(--cr);margin:.75rem 0">Tatu Industrial Park</h3>
+      <p class="sz-cd" style="margin-bottom:1.5rem">East Africa's premier 900-acre SEZ industrial park with ready infrastructure and tax benefits.</p>
+      <ul style="list-style:none;margin-bottom:1.5rem">
+        <li style="padding:.3rem 0;color:rgba(245,240,232,.6)">✓ Serviced industrial land</li>
+        <li style="padding:.3rem 0;color:rgba(245,240,232,.6)">✓ Ready-built warehouses</li>
+        <li style="padding:.3rem 0;color:rgba(245,240,232,.6)">✓ Build-to-suit options</li>
+      </ul>
+      <a href="business.html" class="btn-gh hoverable" style="color:var(--au);border-color:rgba(201,168,76,.3)">Explore Industrial Park →</a>
+    </div>
+    
+    <!-- The Link -->
+    <div class="sz-c hoverable" style="padding:2.5rem 2rem">
+      <div class="sz-ci" style="font-size:2.5rem">📦</div>
+      <div class="sz-ct" style="font-size:.8rem">Warehousing & Logistics</div>
+      <h3 style="font-family:var(--fd);font-size:1.8rem;font-weight:300;color:var(--cr);margin:.75rem 0">The Link</h3>
+      <p class="sz-cd" style="margin-bottom:1.5rem">Flexible warehousing solutions in Phase 2 of Tatu Industrial Park for lease or purchase.</p>
+      <ul style="list-style:none;margin-bottom:1.5rem">
+        <li style="padding:.3rem 0;color:rgba(245,240,232,.6)">✓ Units from 500-5,000 sqm</li>
+        <li style="padding:.3rem 0;color:rgba(245,240,232,.6)">✓ Grade A specification</li>
+        <li style="padding:.3rem 0;color:rgba(245,240,232,.6)">✓ Immediate occupancy</li>
+      </ul>
+      <a href="business.html" class="btn-gh hoverable" style="color:var(--au);border-color:rgba(201,168,76,.3)">Explore The Link →</a>
+    </div>
+    
+    <!-- Commercial & Retail -->
+    <div class="sz-c hoverable" style="padding:2.5rem 2rem">
+      <div class="sz-ci" style="font-size:2.5rem">🏢</div>
+      <div class="sz-ct" style="font-size:.8rem">Office & Retail</div>
+      <h3 style="font-family:var(--fd);font-size:1.8rem;font-weight:300;color:var(--cr);margin:.75rem 0">Commercial Spaces</h3>
+      <p class="sz-cd" style="margin-bottom:1.5rem">Prime office and retail locations in Tatu City's growing commercial district with SEZ benefits.</p>
+      <ul style="list-style:none;margin-bottom:1.5rem">
+        <li style="padding:.3rem 0;color:rgba(245,240,232,.6)">✓ Office suites from 50 sqm</li>
+        <li style="padding:.3rem 0;color:rgba(245,240,232,.6)">✓ Retail units with parking</li>
+        <li style="padding:.3rem 0;color:rgba(245,240,232,.6)">✓ Build-to-suit available</li>
+      </ul>
+      <a href="business.html" class="btn-gh hoverable" style="color:var(--au);border-color:rgba(201,168,76,.3)">Explore Commercial →</a>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section style="padding:6rem 4rem;background:var(--ow);color:var(--ch)">
+  <div style="max-width:1200px;margin:0 auto">
+    <div class="sl-tag" style="color:var(--gm);justify-content:center">Compare Properties</div>
+    <h2 class="st st-dk" style="text-align:center;margin-bottom:3rem">Find Your <em style="color:var(--gm)">Perfect Match</em></h2>
+    
+    <table class="comparison-table">
+      <tr>
+        <th>Property</th>
+        <th>Type</th>
+        <th>Size</th>
+        <th>Price From</th>
+        <th>Key Feature</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td><strong>Kijani Ridge</strong></td>
+        <td>Land Plots</td>
+        <td>¼ - ½ Acre</td>
+        <td>KES 8.5M</td>
+        <td>Dam Views</td>
+        <td><a href="kijani-ridge.html" class="btn-gh hoverable" style="color:var(--gm)">View →</a></td>
+      </tr>
+      <tr>
+        <td><strong>Jabali Towers</strong></td>
+        <td>Luxury Apartments</td>
+        <td>1-4 Bed</td>
+        <td>KES 12.5M</td>
+        <td>City Views</td>
+        <td><a href="jabali-towers.html" class="btn-gh hoverable" style="color:var(--gm)">View →</a></td>
+      </tr>
+      <tr>
+        <td><strong>Porini Point</strong></td>
+        <td>Nature Apartments</td>
+        <td>Studio-3 Bed</td>
+        <td>KES 4.9M</td>
+        <td>Sanctuary Views</td>
+        <td><a href="porini-point.html" class="btn-gh hoverable" style="color:var(--gm)">View →</a></td>
+      </tr>
+      <tr>
+        <td><strong>Kofinaf Residences</strong></td>
+        <td>Affordable Apartments</td>
+        <td>1-3 Bed</td>
+        <td>KES 3.9M</td>
+        <td>Flexible Payment</td>
+        <td><a href="contact.html" class="btn-gh hoverable" style="color:var(--gm)">Enquire →</a></td>
+      </tr>
+      <tr>
+        <td><strong>Industrial Park</strong></td>
+        <td>Industrial Land</td>
+        <td>0.5 - 20 Acres</td>
+        <td>On Request</td>
+        <td>SEZ Benefits</td>
+        <td><a href="business.html" class="btn-gh hoverable" style="color:var(--gm)">Enquire →</a></td>
+      </tr>
+      <tr>
+        <td><strong>The Link</strong></td>
+        <td>Warehousing</td>
+        <td>500-5,000 sqm</td>
+        <td>On Request</td>
+        <td>Ready Occupancy</td>
+        <td><a href="business.html" class="btn-gh hoverable" style="color:var(--gm)">Enquire →</a></td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<!-- SEZ BENEFITS REMINDER -->
+<section style="padding:4rem 4rem;background:var(--o)">
+  <div style="max-width:1000px;margin:0 auto;text-align:center">
+    <div style="font-size:2.5rem;margin-bottom:1rem">🏆</div>
+    <h3 style="font-family:var(--fd);font-size:2rem;font-weight:300;color:#fff;margin-bottom:1rem">All Properties Benefit from SEZ Status</h3>
+    <p style="color:rgba(255,255,255,.8);max-width:700px;margin:0 auto">Zero-rated VAT • Reduced corporate taxes • Import duty exemptions • World-class infrastructure</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="cta-bg"></div>
+  <div class="sl-tag rv" style="justify-content:center;color:#fff">Ready to Invest?</div>
+  <h2 class="cta-t rv">Secure Your Place<br>at Tatu City</h2>
+  <p class="cta-s rv">Our sales team is ready to help you find the perfect property.</p>
+  <div class="cta-acts">
+    <a href="contact.html" class="btn-wh hoverable">Contact Sales Team</a>
+    <a href="https://wa.me/741551669" class="btn-wh-ol hoverable">💬 WhatsApp</a>
+  </div>
+</section>
+
+</main>
+
+<footer id="footer">
+  <div class="ft-in">
+    <div class="nl-strip">
+      <h4>Stay Updated with Tatu City</h4>
+      <form class="nl-f">
+        <input class="nl-i" type="email" placeholder="Your email address" required>
+        <button class="nl-btn hoverable" type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="ft-top">
+      <div>
+        <svg width="60" height="49" viewBox="0 0 80 65" fill="none">
+          <ellipse cx="40" cy="18" rx="22" ry="15" fill="#e8521a"/>
+          <ellipse cx="26" cy="24" rx="14" ry="10" fill="#e8521a"/>
+          <ellipse cx="54" cy="24" rx="14" ry="10" fill="#e8521a"/>
+          <rect x="36" y="34" width="8" height="16" fill="#c9420a" rx="1.5"/>
+          <rect x="24" y="48" width="32" height="4" fill="#c9420a" rx="2"/>
+        </svg>
+        <div class="ft-nm">TATU<s>.</s>CITY</div>
+        <div class="ft-tag">Live &middot; Work &middot; Play</div>
+        <p class="ft-desc">Africa's leading 5,000-acre new city — Kenya's first operational Special Economic Zone.</p>
+        <div class="ft-soc">
+          <a href="#" class="fs hoverable">𝕏</a>
+          <a href="#" class="fs hoverable">f</a>
+          <a href="#" class="fs hoverable">◈</a>
+          <a href="#" class="fs hoverable">▶</a>
+          <a href="#" class="fs hoverable">💬</a>
+        </div>
+      </div>
+      <div>
+        <div class="ft-ct">Properties</div>
+        <ul class="ft-ul">
+          <li><a href="kijani-ridge.html">Kijani Ridge</a></li>
+          <li><a href="jabali-towers.html">Jabali Towers</a></li>
+          <li><a href="porini-point.html">Porini Point</a></li>
+          <li><a href="now-selling.html">Kofinaf Residences</a></li>
+          <li><a href="now-selling.html">The Link</a></li>
+          <li><a href="business.html">Business Locations</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-ct">Explore</div>
+        <ul class="ft-ul">
+          <li><a href="why-tatu.html">Why Choose Tatu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="news.html">News & Media</a></li>
+          <li><a href="tatu-reach.html">Tatu Reach</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-ct">Contact</div>
+        <ul class="ft-ul">
+          <li><a href="tel:+254205131000">+254 20 513 1000</a></li>
+          <li><a href="tel:+254708555555">+254 708 555 555</a></li>
+          <li><a href="mailto:sales@tatucity.com">sales@tatucity.com</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <div class="ft-copy">&copy; 2026 Tatu City Ltd. A Rendeavour Development. All rights reserved.</div>
+      <div class="ft-cred">Made with ✦ by <a href="#">Dw33pY</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
