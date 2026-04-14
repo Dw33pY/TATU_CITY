@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Kijani Ridge | Exclusive Residential Plots at Tatu City, Kenya</title>
+<meta name="description" content="Kijani Ridge — Naturally exclusive urban living on 350+ acres at Tatu City. Serviced ¼ and ½ acre plots with clubhouse, dam views, and SEZ benefits. Now selling."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<a href="#main" class="skip">Skip to main content</a>
+<div id="cur" aria-hidden="true"></div>
+<div id="ring" aria-hidden="true"></div>
+<div id="prog" aria-hidden="true"></div>
+
+<div id="loader" role="progressbar" aria-label="Loading">
+  <div class="ld-wrap" id="ldw">
+    <svg width="80" height="65" viewBox="0 0 80 65" fill="none">
+      <ellipse cx="40" cy="18" rx="22" ry="15" fill="#e8521a"/>
+      <ellipse cx="26" cy="24" rx="14" ry="10" fill="#e8521a"/>
+      <ellipse cx="54" cy="24" rx="14" ry="10" fill="#e8521a"/>
+      <rect x="36" y="34" width="8" height="16" fill="#c9420a" rx="1.5"/>
+      <rect x="24" y="48" width="32" height="4" fill="#c9420a" rx="2"/>
+    </svg>
+    <div class="ld-type">TATU<s>.</s>CITY</div>
+    <div class="ld-sub">Live &middot; Work &middot; Play</div>
+  </div>
+  <div class="ld-bw"><div class="ld-b" id="ldb"></div></div>
+  <div class="ld-pct" id="ldp">0%</div>
+</div>
+
+<nav id="mob" aria-label="Mobile navigation">
+  <ul style="list-style:none">
+    <li class="mi"><a href="now-selling.html" class="ml">Now Selling</a></li>
+    <li class="mi"><a href="kijani-ridge.html" class="ml" style="color:var(--o)">&nbsp;&nbsp;Kijani Ridge</a></li>
+    <li class="mi"><a href="jabali-towers.html" class="ml" style="font-size:clamp(1rem,3.5vw,1.6rem);color:rgba(245,240,232,.6);padding:.6rem 0">&nbsp;&nbsp;Jabali Towers</a></li>
+    <li class="mi"><a href="porini-point.html" class="ml" style="font-size:clamp(1rem,3.5vw,1.6rem);color:rgba(245,240,232,.6);padding:.6rem 0">&nbsp;&nbsp;Porini Point</a></li>
+    <li class="mi"><a href="business.html" class="ml">Business Locations</a></li>
+    <li class="mi"><a href="gallery.html" class="ml">Gallery</a></li>
+    <li class="mi"><a href="news.html" class="ml">News</a></li>
+    <li class="mi"><a href="why-tatu.html" class="ml">Why Choose Tatu</a></li>
+    <li class="mi"><a href="contact.html" class="ml">Contact</a></li>
+  </ul>
+  <div class="mf">&copy; 2026 Tatu City</div>
+</nav>
+
+<header id="nav" role="banner">
+  <a href="index.html" class="n-logo hoverable">
+    <svg style="height:44px" viewBox="0 0 60 50" fill="none">
+      <ellipse cx="30" cy="14" rx="17" ry="11" fill="#e8521a"/>
+      <ellipse cx="20" cy="18" rx="11" ry="8" fill="#e8521a"/>
+      <ellipse cx="40" cy="18" rx="11" ry="8" fill="#e8521a"/>
+      <rect x="27" y="26" width="6" height="13" fill="#c9420a" rx="1"/>
+      <rect x="18" y="37" width="24" height="3" fill="#c9420a" rx="1.5"/>
+    </svg>
+    <div><div class="n-lt">TATU<s>.</s>CITY</div><div class="n-ls">Live &middot; Work &middot; Play</div></div>
+  </a>
+  <ul class="n-ul">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="now-selling.html">Now Selling ▾</a><ul class="n-dd"><li><a href="kijani-ridge.html">Kijani Ridge</a></li><li><a href="jabali-towers.html">Jabali Towers</a></li><li><a href="porini-point.html">Porini Point</a></li><li><a href="business.html">Business Locations</a></li></ul></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="why-tatu.html">Why Choose Tatu</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="n-cta hoverable">Enquire Now</a>
+  <button class="ham" id="ham"><span></span><span></span><span></span></button>
+</header>
+
+<div class="fabs">
+  <a href="https://wa.me/741551669" class="fab fab-wa hoverable" target="_blank">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
+  </a>
+  <button class="fab fab-up hoverable" id="ftop">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+</div>
+
+<main id="main">
+
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image: linear-gradient(155deg, #0a1a10, #1a4a2e, #2d7a50);"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <div class="page-hero-label">Residential &middot; Now Selling</div>
+    <h1 class="page-hero-title">Kijani Ridge</h1>
+    <p class="page-hero-sub">Naturally exclusive urban living on 350+ acres</p>
+    <div class="property-hero-stats">
+      <div class="property-stat"><div class="property-stat-num">350+</div><div class="property-stat-label">Acres</div></div>
+      <div class="property-stat"><div class="property-stat-num">¼ & ½</div><div class="property-stat-label">Acre Plots</div></div>
+      <div class="property-stat"><div class="property-stat-num">30%</div><div class="property-stat-label">Green Space</div></div>
+      <div class="property-stat"><div class="property-stat-num">SEZ</div><div class="property-stat-label">Benefits</div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:6rem 4rem;background:var(--ow);color:var(--ch)">
+  <div style="max-width:1440px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem">
+    <div class="rv-l">
+      <div class="sl-tag" style="color:var(--gm)">The Vision</div>
+      <h2 class="st st-dk">Your <em>Sanctuary</em> in the City</h2>
+      <p style="font-size:1.05rem;line-height:1.8;color:#5a5a4a;margin-top:1.5rem">Kijani Ridge offers a rare opportunity to own a piece of Africa's most visionary new city. Set within Tatu City's 5,000-acre masterplan, this exclusive residential enclave combines the tranquility of nature with the convenience of urban living.</p>
+      <p style="font-size:1.05rem;line-height:1.8;color:#5a5a4a;margin-top:1rem">Each plot is fully serviced with world-class infrastructure — tarmac roads, fiber optic connectivity, reliable power, and treated water — ready for you to build your dream home.</p>
+      <div style="margin-top:2.5rem"><a href="contact.html" class="btn btn-g hoverable">Enquire About Plots →</a></div>
+    </div>
+    <div class="rv-r">
+      <div class="property-features" style="grid-template-columns:1fr 1fr;margin:0">
+        <div class="property-feature"><div class="property-feature-icon">🌳</div><div class="property-feature-title">Nature Trails</div></div>
+        <div class="property-feature"><div class="property-feature-icon">💧</div><div class="property-feature-title">Dam Views</div></div>
+        <div class="property-feature"><div class="property-feature-icon">🏊</div><div class="property-feature-title">Clubhouse</div></div>
+        <div class="property-feature"><div class="property-feature-icon">🔒</div><div class="property-feature-title">24/7 Security</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:4rem 4rem 6rem;background:var(--ow)">
+  <div style="max-width:1440px;margin:0 auto">
+    <div class="property-gallery">
+      <div class="property-gallery-main" style="background-image:linear-gradient(155deg,#1a4a2e,#2d7a50)"></div>
+      <div class="property-gallery-item" style="background-image:linear-gradient(155deg,#0d2018,#1a4428)"></div>
+      <div class="property-gallery-item" style="background-image:linear-gradient(155deg,#2d6a4f,#3a8a5f)"></div>
+      <div class="property-gallery-item" style="background-image:linear-gradient(155deg,#0a1a10,#1a4a2e)"></div>
+      <div class="property-gallery-item" style="background-image:linear-gradient(155deg,#1f5c2e,#2d8c4e)"></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:6rem 4rem;background:var(--dk)">
+  <div style="max-width:1440px;margin:0 auto">
+    <div class="sl-tag" style="justify-content:center">Plot Options</div>
+    <h2 class="st" style="text-align:center;margin-bottom:3rem">Choose Your <em>Perfect Plot</em></h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem">
+      <div class="sz-c hoverable" style="text-align:center"><div style="font-size:3rem;margin-bottom:1rem">¼</div><div class="sz-ct">Quarter Acre</div><p class="sz-cd">Ideal for a spacious family home with garden and pool. Approx. 10,890 sq ft.</p></div>
+      <div class="sz-c hoverable" style="text-align:center"><div style="font-size:3rem;margin-bottom:1rem">½</div><div class="sz-ct">Half Acre</div><p class="sz-cd">Ultimate luxury with room for a main house, guest wing, and extensive landscaping.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="cta-bg"></div>
+  <div class="sl-tag rv" style="justify-content:center;color:#fff">Limited Availability</div>
+  <h2 class="cta-t rv">Secure Your Place at<br>Kijani Ridge</h2>
+  <p class="cta-s rv">Phase 1 selling fast. Book your site visit today.</p>
+  <div class="cta-acts">
+    <a href="contact.html" class="btn-wh hoverable">Enquire Now</a>
+    <a href="https://wa.me/741551669" class="btn-wh-ol hoverable">💬 WhatsApp</a>
+  </div>
+</section>
+
+</main>
+
+<footer id="footer">
+  <div class="ft-in">
+    <div class="nl-strip"><h4>Stay Updated with Tatu City</h4><form class="nl-f"><input class="nl-i" type="email" placeholder="Your email"><button class="nl-btn hoverable">Subscribe</button></form></div>
+    <div class="ft-top">
+      <div><svg width="60" height="49" viewBox="0 0 80 65"><ellipse cx="40" cy="18" rx="22" ry="15" fill="#e8521a"/><ellipse cx="26" cy="24" rx="14" ry="10" fill="#e8521a"/><ellipse cx="54" cy="24" rx="14" ry="10" fill="#e8521a"/><rect x="36" y="34" width="8" height="16" fill="#c9420a" rx="1.5"/><rect x="24" y="48" width="32" height="4" fill="#c9420a" rx="2"/></svg><div class="ft-nm">TATU<s>.</s>CITY</div><div class="ft-tag">Live &middot; Work &middot; Play</div></div>
+      <div><div class="ft-ct">Properties</div><ul class="ft-ul"><li><a href="kijani-ridge.html">Kijani Ridge</a></li><li><a href="jabali-towers.html">Jabali Towers</a></li><li><a href="porini-point.html">Porini Point</a></li></ul></div>
+      <div><div class="ft-ct">Explore</div><ul class="ft-ul"><li><a href="why-tatu.html">Why Tatu</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="news.html">News</a></li></ul></div>
+      <div><div class="ft-ct">Contact</div><ul class="ft-ul"><li><a href="tel:+254205131000">+254 20 513 1000</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    </div>
+    <div class="ft-bot"><div class="ft-copy">&copy; 2026 Tatu City Ltd.</div><div class="ft-cred">Made with ✦ by Dw33pY</div></div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

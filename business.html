@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Tatu City Business | SEZ Industrial Park & Commercial Locations, Kenya</title>
+<meta name="description" content="Establish your business in Kenya's first operational Special Economic Zone. Tatu City offers 10-year tax holiday, 0% import duty, and ready infrastructure for industrial and commercial enterprises."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<a href="#main" class="skip">Skip to main content</a>
+<div id="cur" aria-hidden="true"></div>
+<div id="ring" aria-hidden="true"></div>
+<div id="prog" aria-hidden="true"></div>
+
+<div id="loader" role="progressbar" aria-label="Loading">
+  <div class="ld-wrap" id="ldw">
+    <svg width="80" height="65" viewBox="0 0 80 65" fill="none">
+      <ellipse cx="40" cy="18" rx="22" ry="15" fill="#e8521a"/>
+      <ellipse cx="26" cy="24" rx="14" ry="10" fill="#e8521a"/>
+      <ellipse cx="54" cy="24" rx="14" ry="10" fill="#e8521a"/>
+      <rect x="36" y="34" width="8" height="16" fill="#c9420a" rx="1.5"/>
+      <rect x="24" y="48" width="32" height="4" fill="#c9420a" rx="2"/>
+    </svg>
+    <div class="ld-type">TATU<s>.</s>CITY</div>
+    <div class="ld-sub">Live &middot; Work &middot; Play</div>
+  </div>
+  <div class="ld-bw"><div class="ld-b" id="ldb"></div></div>
+  <div class="ld-pct" id="ldp">0%</div>
+</div>
+
+<nav id="mob" aria-label="Mobile navigation">
+  <ul style="list-style:none">
+    <li class="mi"><a href="now-selling.html" class="ml">Now Selling</a></li>
+    <li class="mi"><a href="business.html" class="ml" style="color:var(--o)">Business Locations</a></li>
+    <li class="mi"><a href="gallery.html" class="ml">Gallery</a></li>
+    <li class="mi"><a href="news.html" class="ml">News</a></li>
+    <li class="mi"><a href="why-tatu.html" class="ml">Why Choose Tatu</a></li>
+    <li class="mi"><a href="tatu-reach.html" class="ml">Tatu Reach</a></li>
+    <li class="mi"><a href="careers.html" class="ml">Careers</a></li>
+    <li class="mi"><a href="contact.html" class="ml">Contact</a></li>
+  </ul>
+  <div class="mf">&copy; 2026 Tatu City &middot; A Rendeavour Development</div>
+</nav>
+
+<header id="nav" role="banner">
+  <a href="index.html" class="n-logo hoverable">
+    <svg style="height:44px" viewBox="0 0 60 50" fill="none">
+      <ellipse cx="30" cy="14" rx="17" ry="11" fill="#e8521a"/>
+      <ellipse cx="20" cy="18" rx="11" ry="8" fill="#e8521a"/>
+      <ellipse cx="40" cy="18" rx="11" ry="8" fill="#e8521a"/>
+      <rect x="27" y="26" width="6" height="13" fill="#c9420a" rx="1"/>
+      <rect x="18" y="37" width="24" height="3" fill="#c9420a" rx="1.5"/>
+    </svg>
+    <div><div class="n-lt">TATU<s>.</s>CITY</div><div class="n-ls">Live &middot; Work &middot; Play</div></div>
+  </a>
+  <ul class="n-ul">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="now-selling.html">Now Selling ▾</a><ul class="n-dd"><li><a href="kijani-ridge.html">Kijani Ridge</a></li><li><a href="jabali-towers.html">Jabali Towers</a></li><li><a href="porini-point.html">Porini Point</a></li><li><a href="business.html">Business Locations</a></li></ul></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="why-tatu.html">Why Choose Tatu</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="n-cta hoverable">Enquire Now</a>
+  <button class="ham" id="ham"><span></span><span></span><span></span></button>
+</header>
+
+<div class="fabs">
+  <a href="https://wa.me/741551669" class="fab fab-wa hoverable" target="_blank">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+  </a>
+  <button class="fab fab-up hoverable" id="ftop">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+</div>
+
+<main id="main">
+
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image: linear-gradient(155deg, #1a1000, #3a2800, #5a4200);"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <div class="page-hero-label">Special Economic Zone &middot; Business Hub</div>
+    <h1 class="page-hero-title">Built for Business<br>to Thrive</h1>
+    <p class="page-hero-sub">Kenya's first operational SEZ — unmatched fiscal incentives</p>
+    <div class="property-hero-stats">
+      <div class="property-stat"><div class="property-stat-num">10yr</div><div class="property-stat-label">Tax Holiday</div></div>
+      <div class="property-stat"><div class="property-stat-num">0%</div><div class="property-stat-label">Import Duty</div></div>
+      <div class="property-stat"><div class="property-stat-num">100+</div><div class="property-stat-label">Businesses</div></div>
+      <div class="property-stat"><div class="property-stat-num">900ac</div><div class="property-stat-label">Industrial Park</div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:6rem 4rem;background:var(--dk)">
+  <div style="max-width:1440px;margin:0 auto">
+    <div class="mq-band" style="margin-bottom:4rem">
+      <div class="mq-tr">
+        <span class="mq-i">10-Year Tax Holiday<span class="mq-sep"></span></span>
+        <span class="mq-i">Zero-Rated VAT<span class="mq-sep"></span></span>
+        <span class="mq-i">0% Import Duty<span class="mq-sep"></span></span>
+        <span class="mq-i">Ready Infrastructure<span class="mq-sep"></span></span>
+        <span class="mq-i">10-Year Tax Holiday<span class="mq-sep"></span></span>
+        <span class="mq-i">Zero-Rated VAT<span class="mq-sep"></span></span>
+        <span class="mq-i">0% Import Duty<span class="mq-sep"></span></span>
+        <span class="mq-i">Ready Infrastructure<span class="mq-sep"></span></span>
+      </div>
+    </div>
+    
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;margin-bottom:5rem">
+      <div class="rv-l">
+        <div class="sl-tag">Industrial & Logistics</div>
+        <h2 class="st">Tatu Industrial <em>Park</em></h2>
+        <p style="font-size:1.02rem;line-height:1.8;color:rgba(245,240,232,.58);margin-top:1.5rem">East Africa's premier 900-acre SEZ industrial park offers world-class logistics infrastructure, ready-built warehouses, and serviced industrial land for manufacturing, assembly, and distribution operations.</p>
+        <div style="margin-top:2rem"><a href="contact.html" class="btn btn-o hoverable">Enquire About Industrial Space →</a></div>
+      </div>
+      <div class="rv-r">
+        <div class="sl-tag">Commercial & Retail</div>
+        <h2 class="st">The Link & <em>More</em></h2>
+        <p style="font-size:1.02rem;line-height:1.8;color:rgba(245,240,232,.58);margin-top:1.5rem">Flexible commercial spaces including The Link warehouses, retail units in Tatu Central, and office spaces in our growing business district — all with SEZ benefits.</p>
+        <div style="margin-top:2rem"><a href="contact.html" class="btn btn-o hoverable">Explore Commercial →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:4rem 4rem;background:var(--gd)">
+  <div style="max-width:1440px;margin:0 auto">
+    <div class="sl-tag" style="justify-content:center">SEZ Incentives</div>
+    <h2 class="st" style="text-align:center;margin-bottom:3rem">Unmatched <em>Business Benefits</em></h2>
+    <div class="sez-g" style="grid-template-columns:repeat(4,1fr)">
+      <div class="sz-c hoverable"><div class="sz-ci">📊</div><div class="sz-ct">10-Year Tax Holiday</div><p class="sz-cd">Reduced corporate income tax for 10 years.</p></div>
+      <div class="sz-c hoverable"><div class="sz-ci">🚫</div><div class="sz-ct">Zero-Rated VAT</div><p class="sz-cd">Zero-rated VAT on all goods and services.</p></div>
+      <div class="sz-c hoverable"><div class="sz-ci">🚢</div><div class="sz-ct">0% Import Duty</div><p class="sz-cd">Complete exemption on capital goods and materials.</p></div>
+      <div class="sz-c hoverable"><div class="sz-ci">⚡</div><div class="sz-ct">Ready Infrastructure</div><p class="sz-cd">Power, water, fiber — operational from day one.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:6rem 4rem;background:var(--dk)">
+  <div style="max-width:1440px;margin:0 auto">
+    <div class="sl-tag" style="justify-content:center">Trusted By</div>
+    <h2 class="st" style="text-align:center;margin-bottom:2rem">100+ <em>Global & Local</em> Companies</h2>
+    <div class="who-gs" style="justify-content:center;margin-bottom:3rem">
+      <span class="wl hoverable">Heineken</span><span class="wl hoverable">Naivas</span><span class="wl hoverable">Dormans</span>
+      <span class="wl hoverable">Kärcher</span><span class="wl hoverable">Airtel Africa</span><span class="wl hoverable">CCI Global</span>
+      <span class="wl hoverable">ADvTECH</span><span class="wl hoverable">Unilever</span><span class="wl hoverable">Freight Forwarders</span>
+      <span class="wl hoverable">+ 90 More</span>
+    </div>
+    <blockquote style="max-width:800px;margin:0 auto;padding:2rem;border-left:3px solid var(--o);background:rgba(255,255,255,.025);text-align:center">
+      <p style="font-family:var(--fd);font-size:1.2rem;font-style:italic;color:rgba(245,240,232,.7)">"Our selection of Kenya and Tatu City SEZ reflects our belief in the transformative power of collaboration."</p>
+      <footer style="font-family:var(--fs);font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--o);margin-top:1rem">— Lu Jianguo, Founder, FullCare Medical</footer>
+    </blockquote>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="cta-bg"></div>
+  <div class="sl-tag rv" style="justify-content:center;color:#fff">Grow With Tatu City</div>
+  <h2 class="cta-t rv">Establish Your Business<br>in Africa's Leading SEZ</h2>
+  <p class="cta-s rv">Our business development team is ready to help you set up operations.</p>
+  <div class="cta-acts">
+    <a href="contact.html" class="btn-wh hoverable">Contact Business Team</a>
+    <a href="https://wa.me/741551669" class="btn-wh-ol hoverable">💬 WhatsApp</a>
+  </div>
+</section>
+
+</main>
+
+<footer id="footer">
+  <div class="ft-in">
+    <div class="nl-strip"><h4>Stay Updated with Tatu City</h4><form class="nl-f"><input class="nl-i" type="email" placeholder="Your email"><button class="nl-btn hoverable">Subscribe</button></form></div>
+    <div class="ft-top">
+      <div><svg width="60" height="49" viewBox="0 0 80 65"><ellipse cx="40" cy="18" rx="22" ry="15" fill="#e8521a"/><ellipse cx="26" cy="24" rx="14" ry="10" fill="#e8521a"/><ellipse cx="54" cy="24" rx="14" ry="10" fill="#e8521a"/><rect x="36" y="34" width="8" height="16" fill="#c9420a" rx="1.5"/><rect x="24" y="48" width="32" height="4" fill="#c9420a" rx="2"/></svg><div class="ft-nm">TATU<s>.</s>CITY</div><div class="ft-tag">Live &middot; Work &middot; Play</div></div>
+      <div><div class="ft-ct">Properties</div><ul class="ft-ul"><li><a href="kijani-ridge.html">Kijani Ridge</a></li><li><a href="jabali-towers.html">Jabali Towers</a></li><li><a href="porini-point.html">Porini Point</a></li></ul></div>
+      <div><div class="ft-ct">Explore</div><ul class="ft-ul"><li><a href="why-tatu.html">Why Tatu</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="news.html">News</a></li></ul></div>
+      <div><div class="ft-ct">Contact</div><ul class="ft-ul"><li><a href="tel:+254205131000">+254 20 513 1000</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    </div>
+    <div class="ft-bot"><div class="ft-copy">&copy; 2026 Tatu City Ltd.</div><div class="ft-cred">Made with ✦ by Dw33pY</div></div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

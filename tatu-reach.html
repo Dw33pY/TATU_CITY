@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Tatu Reach | Community Impact & ESG Programme — Tatu City, Kenya</title>
+<meta name="description" content="Tatu Reach is Tatu City's ESG programme — supporting education, healthcare, community development, and environmental conservation. 2M+ meals funded since 2016."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<a href="#main" class="skip">Skip to main content</a>
+<div id="cur" aria-hidden="true"></div>
+<div id="ring" aria-hidden="true"></div>
+<div id="prog" aria-hidden="true"></div>
+
+<div id="loader" role="progressbar" aria-label="Loading">
+  <div class="ld-wrap" id="ldw">
+    <svg width="80" height="65" viewBox="0 0 80 65" fill="none">
+      <ellipse cx="40" cy="18" rx="22" ry="15" fill="#e8521a"/>
+      <ellipse cx="26" cy="24" rx="14" ry="10" fill="#e8521a"/>
+      <ellipse cx="54" cy="24" rx="14" ry="10" fill="#e8521a"/>
+      <rect x="36" y="34" width="8" height="16" fill="#c9420a" rx="1.5"/>
+      <rect x="24" y="48" width="32" height="4" fill="#c9420a" rx="2"/>
+    </svg>
+    <div class="ld-type">TATU<s>.</s>CITY</div>
+    <div class="ld-sub">Live &middot; Work &middot; Play</div>
+  </div>
+  <div class="ld-bw"><div class="ld-b" id="ldb"></div></div>
+  <div class="ld-pct" id="ldp">0%</div>
+</div>
+
+<nav id="mob" aria-label="Mobile navigation">
+  <ul style="list-style:none">
+    <li class="mi"><a href="now-selling.html" class="ml">Now Selling</a></li>
+    <li class="mi"><a href="business.html" class="ml">Business Locations</a></li>
+    <li class="mi"><a href="gallery.html" class="ml">Gallery</a></li>
+    <li class="mi"><a href="news.html" class="ml">News</a></li>
+    <li class="mi"><a href="why-tatu.html" class="ml">Why Choose Tatu</a></li>
+    <li class="mi"><a href="tatu-reach.html" class="ml" style="color:var(--o)">Tatu Reach</a></li>
+    <li class="mi"><a href="careers.html" class="ml">Careers</a></li>
+    <li class="mi"><a href="contact.html" class="ml">Contact</a></li>
+  </ul>
+  <div class="mf">&copy; 2026 Tatu City &middot; A Rendeavour Development</div>
+</nav>
+
+<header id="nav" role="banner">
+  <a href="index.html" class="n-logo hoverable">
+    <svg style="height:44px" viewBox="0 0 60 50" fill="none">
+      <ellipse cx="30" cy="14" rx="17" ry="11" fill="#e8521a"/>
+      <ellipse cx="20" cy="18" rx="11" ry="8" fill="#e8521a"/>
+      <ellipse cx="40" cy="18" rx="11" ry="8" fill="#e8521a"/>
+      <rect x="27" y="26" width="6" height="13" fill="#c9420a" rx="1"/>
+      <rect x="18" y="37" width="24" height="3" fill="#c9420a" rx="1.5"/>
+    </svg>
+    <div><div class="n-lt">TATU<s>.</s>CITY</div><div class="n-ls">Live &middot; Work &middot; Play</div></div>
+  </a>
+  <ul class="n-ul">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="now-selling.html">Now Selling ▾</a><ul class="n-dd"><li><a href="kijani-ridge.html">Kijani Ridge</a></li><li><a href="jabali-towers.html">Jabali Towers</a></li><li><a href="porini-point.html">Porini Point</a></li><li><a href="business.html">Business Locations</a></li></ul></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="why-tatu.html">Why Choose Tatu</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="n-cta hoverable">Get Involved</a>
+  <button class="ham" id="ham"><span></span><span></span><span></span></button>
+</header>
+
+<div class="fabs">
+  <a href="https://wa.me/741551669" class="fab fab-wa hoverable" target="_blank">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+  </a>
+  <button class="fab fab-up hoverable" id="ftop">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+</div>
+
+<main id="main">
+
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image: linear-gradient(155deg, #0a1a10, #1a4a2e, #2d7a50);"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <div class="page-hero-label">ESG & Community Programme</div>
+    <h1 class="page-hero-title">Tatu Reach</h1>
+    <p class="page-hero-sub">Building community with purpose — benchmarked against UN SDGs</p>
+    <div class="property-hero-stats">
+      <div class="property-stat"><div class="property-stat-num">2M+</div><div class="property-stat-label">Meals Funded</div></div>
+      <div class="property-stat"><div class="property-stat-num">6</div><div class="property-stat-label">Schools Supported</div></div>
+      <div class="property-stat"><div class="property-stat-num">500+</div><div class="property-stat-label">Graduates</div></div>
+      <div class="property-stat"><div class="property-stat-num">2,000+</div><div class="property-stat-label">Trees Planted</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="reach" style="padding:6rem 4rem;background:var(--cr)">
+  <div class="rc-g" style="max-width:1440px;margin:0 auto">
+    <div class="rv-l">
+      <div class="sl-tag" style="color:var(--gm)">Our Commitment</div>
+      <h2 class="st st-dk">Building <em style="color:var(--gm)">Community</em> With Purpose</h2>
+      <p style="font-size:1.02rem;line-height:1.8;color:#5a5a4a;margin-top:1.75rem">Tatu Reach is Tatu City's ESG programme — benchmarked against the UN Sustainable Development Goals across four pillars: Education, Healthcare, Community, and Environmental Conservation. Since 2016, we've funded over 2 million meals for underserved schoolchildren.</p>
+      <div class="rc-ps">
+        <div class="rc-p hoverable"><div class="rc-pi">📚</div><div class="rc-pt">Education</div><p class="rc-pd">Supporting 6 government schools with free meals, materials, uniforms and skills training for 500+ academy graduates.</p></div>
+        <div class="rc-p hoverable"><div class="rc-pi">🏥</div><div class="rc-pt">Healthcare</div><p class="rc-pd">Curafa clinic offering affordable healthcare from KES 100 consultation with annual coverage at KES 1,500.</p></div>
+        <div class="rc-p hoverable"><div class="rc-pi">🌿</div><div class="rc-pt">Conservation</div><p class="rc-pd">2,000+ indigenous trees in Tatu Bustani nursery. Rewilding hundreds of acres of native flora and fauna.</p></div>
+        <div class="rc-p hoverable"><div class="rc-pi">👩‍💼</div><div class="rc-pt">Women's Empowerment</div><p class="rc-pd">RenWoman initiative promoting gender equality across all Rendeavour markets in Africa.</p></div>
+      </div>
+    </div>
+    <div class="rc-v rv-r">
+      <div class="rc-m"><div class="rc-mv">Community<br>Impact in Action</div><div class="rc-ms">Nairobi, Kenya &middot; Since 2016</div></div>
+      <div class="rc-a"><div class="rc-an">2M+</div><div class="rc-al">Meals Funded Since 2016</div></div>
+      <div class="rc-b"><div class="rc-bn">500+</div><div class="rc-bl">Academy Graduates</div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:6rem 4rem;background:var(--ow)">
+  <div style="max-width:1200px;margin:0 auto">
+    <div class="sl-tag" style="color:var(--gm);justify-content:center">UN Sustainable Development Goals</div>
+    <h2 class="st st-dk" style="text-align:center;margin-bottom:3rem">Aligned with <em>Global Standards</em></h2>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;text-align:center">
+      <div style="padding:1.5rem;background:rgba(31,92,46,.04);border:1px solid rgba(31,92,46,.1)"><div style="font-size:2rem;color:var(--gm)">1</div><div style="font-weight:600;margin:.5rem 0">No Poverty</div></div>
+      <div style="padding:1.5rem;background:rgba(31,92,46,.04);border:1px solid rgba(31,92,46,.1)"><div style="font-size:2rem;color:var(--gm)">4</div><div style="font-weight:600;margin:.5rem 0">Quality Education</div></div>
+      <div style="padding:1.5rem;background:rgba(31,92,46,.04);border:1px solid rgba(31,92,46,.1)"><div style="font-size:2rem;color:var(--gm)">5</div><div style="font-weight:600;margin:.5rem 0">Gender Equality</div></div>
+      <div style="padding:1.5rem;background:rgba(31,92,46,.04);border:1px solid rgba(31,92,46,.1)"><div style="font-size:2rem;color:var(--gm)">15</div><div style="font-weight:600;margin:.5rem 0">Life on Land</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="cta-bg"></div>
+  <div class="sl-tag rv" style="justify-content:center;color:#fff">Get Involved</div>
+  <h2 class="cta-t rv">Partner With Us<br>for Greater Impact</h2>
+  <p class="cta-s rv">Learn how you can support Tatu Reach initiatives in education, healthcare, and conservation.</p>
+  <div class="cta-acts">
+    <a href="contact.html" class="btn-wh hoverable">Contact Tatu Reach</a>
+    <a href="#" class="btn-wh-ol hoverable">Download Impact Report</a>
+  </div>
+</section>
+
+</main>
+
+<footer id="footer">
+  <div class="ft-in">
+    <div class="nl-strip"><h4>Stay Updated with Tatu City</h4><form class="nl-f"><input class="nl-i" type="email" placeholder="Your email"><button class="nl-btn hoverable">Subscribe</button></form></div>
+    <div class="ft-top">
+      <div><svg width="60" height="49" viewBox="0 0 80 65"><ellipse cx="40" cy="18" rx="22" ry="15" fill="#e8521a"/><ellipse cx="26" cy="24" rx="14" ry="10" fill="#e8521a"/><ellipse cx="54" cy="24" rx="14" ry="10" fill="#e8521a"/><rect x="36" y="34" width="8" height="16" fill="#c9420a" rx="1.5"/><rect x="24" y="48" width="32" height="4" fill="#c9420a" rx="2"/></svg><div class="ft-nm">TATU<s>.</s>CITY</div><div class="ft-tag">Live &middot; Work &middot; Play</div></div>
+      <div><div class="ft-ct">Properties</div><ul class="ft-ul"><li><a href="kijani-ridge.html">Kijani Ridge</a></li><li><a href="jabali-towers.html">Jabali Towers</a></li><li><a href="porini-point.html">Porini Point</a></li></ul></div>
+      <div><div class="ft-ct">Explore</div><ul class="ft-ul"><li><a href="why-tatu.html">Why Tatu</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="news.html">News</a></li></ul></div>
+      <div><div class="ft-ct">Contact</div><ul class="ft-ul"><li><a href="tel:+254205131000">+254 20 513 1000</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    </div>
+    <div class="ft-bot"><div class="ft-copy">&copy; 2026 Tatu City Ltd.</div><div class="ft-cred">Made with ✦ by Dw33pY</div></div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
