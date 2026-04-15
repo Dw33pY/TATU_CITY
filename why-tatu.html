@@ -21,7 +21,7 @@
 
 <div id="loader" role="progressbar" aria-label="Loading">
   <div class="ld-wrap" id="ldw">
-    <svg width="80" height="65" viewBox="0 0 80 65" fill="none">
+    <svg width="80" height="65" viewBox="0 0 80 65" fill="none" aria-label="Tatu City logo">
       <ellipse cx="40" cy="18" rx="22" ry="15" fill="#e8521a"/>
       <ellipse cx="26" cy="24" rx="14" ry="10" fill="#e8521a"/>
       <ellipse cx="54" cy="24" rx="14" ry="10" fill="#e8521a"/>
@@ -35,23 +35,11 @@
   <div class="ld-pct" id="ldp">0%</div>
 </div>
 
-<nav id="mob" aria-label="Mobile navigation">
-  <ul style="list-style:none">
-    <li class="mi"><a href="now-selling.html" class="ml">Now Selling</a></li>
-    <li class="mi"><a href="business.html" class="ml">Business Locations</a></li>
-    <li class="mi"><a href="gallery.html" class="ml">Gallery</a></li>
-    <li class="mi"><a href="news.html" class="ml">News</a></li>
-    <li class="mi"><a href="why-tatu.html" class="ml" style="color:var(--o)">Why Choose Tatu</a></li>
-    <li class="mi"><a href="tatu-reach.html" class="ml">Tatu Reach</a></li>
-    <li class="mi"><a href="careers.html" class="ml">Careers</a></li>
-    <li class="mi"><a href="contact.html" class="ml">Contact</a></li>
-  </ul>
-  <div class="mf">&copy; 2026 Tatu City &middot; A Rendeavour Development</div>
-</nav>
+<nav id="mob" aria-label="Mobile navigation"></nav>
 
 <header id="nav" role="banner">
-  <a href="index.html" class="n-logo hoverable">
-    <svg style="height:44px" viewBox="0 0 60 50" fill="none">
+  <a href="index.html" class="n-logo hoverable" aria-label="Tatu City Home">
+    <svg style="height:44px" viewBox="0 0 60 50" fill="none" aria-hidden="true">
       <ellipse cx="30" cy="14" rx="17" ry="11" fill="#e8521a"/>
       <ellipse cx="20" cy="18" rx="11" ry="8" fill="#e8521a"/>
       <ellipse cx="40" cy="18" rx="11" ry="8" fill="#e8521a"/>
@@ -60,31 +48,36 @@
     </svg>
     <div><div class="n-lt">TATU<s>.</s>CITY</div><div class="n-ls">Live &middot; Work &middot; Play</div></div>
   </a>
-  <ul class="n-ul">
+  <ul class="n-ul" role="list">
     <li><a href="index.html">Home</a></li>
-    <li><a href="now-selling.html">Now Selling ▾</a><ul class="n-dd"><li><a href="kijani-ridge.html">Kijani Ridge</a></li><li><a href="jabali-towers.html">Jabali Towers</a></li><li><a href="porini-point.html">Porini Point</a></li><li><a href="business.html">Business Locations</a></li></ul></li>
+    <li><a href="now-selling.html">Now Selling ▾</a>
+      <ul class="n-dd"><li><a href="kijani-ridge.html">Kijani Ridge</a></li><li><a href="jabali-towers.html">Jabali Towers</a></li><li><a href="porini-point.html">Porini Point</a></li><li><a href="business.html">Business Locations</a></li></ul>
+    </li>
     <li><a href="gallery.html">Gallery</a></li>
     <li><a href="news.html">News</a></li>
-    <li><a href="why-tatu.html">Why Choose Tatu</a></li>
+    <li class="act"><a href="why-tatu.html">Why Choose Tatu</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
   <a href="contact.html" class="n-cta hoverable">Enquire Now</a>
-  <button class="ham" id="ham"><span></span><span></span><span></span></button>
+  <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob">
+    <span></span><span></span><span></span>
+  </button>
 </header>
 
-<div class="fabs">
-  <a href="https://wa.me/741551669" class="fab fab-wa hoverable" target="_blank">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+<div class="fabs" aria-label="Quick actions">
+  <a href="https://wa.me/254741551669" class="fab fab-wa hoverable" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
   </a>
-  <button class="fab fab-up hoverable" id="ftop">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  <button class="fab fab-up hoverable" id="ftop" aria-label="Scroll to top">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
   </button>
 </div>
 
 <main id="main">
 
 <section class="page-hero">
-  <div class="page-hero-bg" style="background-image: linear-gradient(145deg, #04080a 0%, #0d1e18 35%, #163028 65%, #081412 100%);"></div>
+  <!-- Hero background image -->
+  <div class="page-hero-bg" style="background-image: url('https://images.pexels.com/photos/280221/pexels-photo-280221.jpeg?auto=compress&cs=tinysrgb&w=1920'); background-position: center 30%;"></div>
   <div class="page-hero-overlay"></div>
   <div class="page-hero-content">
     <div class="page-hero-label">The Tatu City Difference</div>
@@ -98,29 +91,89 @@
     <div class="sl-tag" style="justify-content:center">Key Benefits</div>
     <h2 class="st" style="text-align:center;margin-bottom:3rem">Everything You Need, <em>All in One Place</em></h2>
     <div class="benefits-grid">
-      <div class="benefit-card hoverable"><div class="benefit-icon">🏠</div><div class="benefit-title">Complete City</div><p class="benefit-desc">Homes, schools, offices, shops, healthcare, and entertainment — all within walking distance.</p></div>
-      <div class="benefit-card hoverable"><div class="benefit-icon">💰</div><div class="benefit-title">SEZ Benefits</div><p class="benefit-desc">10-year tax holiday, 0% import duty, zero-rated VAT for businesses and residents.</p></div>
-      <div class="benefit-card hoverable"><div class="benefit-icon">🌿</div><div class="benefit-title">30% Green Space</div><p class="benefit-desc">Parks, nature trails, and a wildlife sanctuary — nature is never far away.</p></div>
-      <div class="benefit-card hoverable"><div class="benefit-icon">📍</div><div class="benefit-title">Strategic Location</div><p class="benefit-desc">30 min to Nairobi CBD, 40 min to JKIA — connected to East Africa's largest market.</p></div>
-      <div class="benefit-card hoverable"><div class="benefit-icon">🔒</div><div class="benefit-title">24/7 Security</div><p class="benefit-desc">Gated community with private security, CCTV, and rapid response teams.</p></div>
-      <div class="benefit-card hoverable"><div class="benefit-icon">⚡</div><div class="benefit-title">Ready Infrastructure</div><p class="benefit-desc">Reliable power, treated water, fiber internet, and tarmac roads — operational now.</p></div>
+      <div class="benefit-card hoverable">
+        <div class="benefit-icon">🏠</div>
+        <div class="benefit-title">Complete City</div>
+        <p class="benefit-desc">Homes, schools, offices, shops, healthcare, and entertainment — all within walking distance.</p>
+      </div>
+      <div class="benefit-card hoverable">
+        <div class="benefit-icon">💰</div>
+        <div class="benefit-title">SEZ Benefits</div>
+        <p class="benefit-desc">10-year tax holiday, 0% import duty, zero-rated VAT for businesses and residents.</p>
+      </div>
+      <div class="benefit-card hoverable">
+        <div class="benefit-icon">🌿</div>
+        <div class="benefit-title">30% Green Space</div>
+        <p class="benefit-desc">Parks, nature trails, and a wildlife sanctuary — nature is never far away.</p>
+      </div>
+      <div class="benefit-card hoverable">
+        <div class="benefit-icon">📍</div>
+        <div class="benefit-title">Strategic Location</div>
+        <p class="benefit-desc">30 min to Nairobi CBD, 40 min to JKIA — connected to East Africa's largest market.</p>
+      </div>
+      <div class="benefit-card hoverable">
+        <div class="benefit-icon">🔒</div>
+        <div class="benefit-title">24/7 Security</div>
+        <p class="benefit-desc">Gated community with private security, CCTV, and rapid response teams.</p>
+      </div>
+      <div class="benefit-card hoverable">
+        <div class="benefit-icon">⚡</div>
+        <div class="benefit-title">Ready Infrastructure</div>
+        <p class="benefit-desc">Reliable power, treated water, fiber internet, and tarmac roads — operational now.</p>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- FIXED COMPARISON SECTION - Now with proper contrast -->
 <section style="padding:6rem 4rem;background:var(--ow);color:var(--ch)">
   <div style="max-width:1000px;margin:0 auto">
     <div class="sl-tag" style="color:var(--gm);justify-content:center">Comparison</div>
-    <h2 class="st st-dk" style="text-align:center;margin-bottom:3rem">Tatu City vs <em>Traditional Nairobi</em></h2>
-    <table class="comparison-table">
-      <tr><th>Feature</th><th>Tatu City</th><th>Nairobi Average</th></tr>
-      <tr><td>SEZ Tax Benefits</td><td><span class="check-icon">✓</span> 10-year holiday</td><td><span class="x-icon">✕</span> None</td></tr>
-      <tr><td>Green Space</td><td><span class="check-icon">✓</span> 30% guaranteed</td><td><span class="x-icon">✕</span> &lt;5%</td></tr>
-      <tr><td>Planned Infrastructure</td><td><span class="check-icon">✓</span> Fully master-planned</td><td><span class="x-icon">✕</span> Ad-hoc development</td></tr>
-      <tr><td>Private Governance</td><td><span class="check-icon">✓</span> Self-regulated</td><td><span class="x-icon">✕</span> County government</td></tr>
-      <tr><td>Security</td><td><span class="check-icon">✓</span> 24/7 private security</td><td><span class="x-icon">✕</span> Variable</td></tr>
-      <tr><td>Traffic Congestion</td><td><span class="check-icon">✓</span> Minimal</td><td><span class="x-icon">✕</span> Severe</td></tr>
-    </table>
+    <h2 class="st st-dk" style="text-align:center;margin-bottom:3rem">Tatu City vs <em style="color:var(--gm)">Traditional Nairobi</em></h2>
+    
+    <div style="background:#fff; border-radius: 4px; overflow-x: auto; box-shadow: 0 4px 20px rgba(0,0,0,.08);">
+      <table style="width:100%; border-collapse: collapse; min-width: 600px;">
+        <thead>
+          <tr style="background: var(--gd);">
+            <th style="padding: 1.2rem 1.5rem; text-align: left; font-family: var(--fs); font-size: .65rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--au); border-bottom: 2px solid var(--o);">Feature</th>
+            <th style="padding: 1.2rem 1.5rem; text-align: left; font-family: var(--fs); font-size: .65rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--au); border-bottom: 2px solid var(--o);">Tatu City</th>
+            <th style="padding: 1.2rem 1.5rem; text-align: left; font-family: var(--fs); font-size: .65rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--au); border-bottom: 2px solid var(--o);">Nairobi Average</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid rgba(0,0,0,.06);">
+            <td style="padding: 1.2rem 1.5rem; font-weight: 500; color: var(--ch);">SEZ Tax Benefits</td>
+            <td style="padding: 1.2rem 1.5rem; color: var(--ch);"><span style="color: var(--gf); font-weight: 700;">✓</span> 10-year holiday</td>
+            <td style="padding: 1.2rem 1.5rem; color: var(--ch);"><span style="color: rgba(232,82,26,.5);">✕</span> None</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(0,0,0,.06); background: rgba(31,92,46,.03);">
+            <td style="padding: 1.2rem 1.5rem; font-weight: 500; color: var(--ch);">Green Space</td>
+            <td style="padding: 1.2rem 1.5rem; color: var(--ch);"><span style="color: var(--gf); font-weight: 700;">✓</span> 30% guaranteed</td>
+            <td style="padding: 1.2rem 1.5rem; color: var(--ch);"><span style="color: rgba(232,82,26,.5);">✕</span> &lt;5%</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(0,0,0,.06);">
+            <td style="padding: 1.2rem 1.5rem; font-weight: 500; color: var(--ch);">Planned Infrastructure</td>
+            <td style="padding: 1.2rem 1.5rem; color: var(--ch);"><span style="color: var(--gf); font-weight: 700;">✓</span> Fully master-planned</td>
+            <td style="padding: 1.2rem 1.5rem; color: var(--ch);"><span style="color: rgba(232,82,26,.5);">✕</span> Ad-hoc development</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(0,0,0,.06); background: rgba(31,92,46,.03);">
+            <td style="padding: 1.2rem 1.5rem; font-weight: 500; color: var(--ch);">Private Governance</td>
+            <td style="padding: 1.2rem 1.5rem; color: var(--ch);"><span style="color: var(--gf); font-weight: 700;">✓</span> Self-regulated</td>
+            <td style="padding: 1.2rem 1.5rem; color: var(--ch);"><span style="color: rgba(232,82,26,.5);">✕</span> County government</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(0,0,0,.06);">
+            <td style="padding: 1.2rem 1.5rem; font-weight: 500; color: var(--ch);">Security</td>
+            <td style="padding: 1.2rem 1.5rem; color: var(--ch);"><span style="color: var(--gf); font-weight: 700;">✓</span> 24/7 private security</td>
+            <td style="padding: 1.2rem 1.5rem; color: var(--ch);"><span style="color: rgba(232,82,26,.5);">✕</span> Variable</td>
+          </tr>
+          <tr>
+            <td style="padding: 1.2rem 1.5rem; font-weight: 500; color: var(--ch);">Traffic Congestion</td>
+            <td style="padding: 1.2rem 1.5rem; color: var(--ch);"><span style="color: var(--gf); font-weight: 700;">✓</span> Minimal</td>
+            <td style="padding: 1.2rem 1.5rem; color: var(--ch);"><span style="color: rgba(232,82,26,.5);">✕</span> Severe</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </section>
 
@@ -130,36 +183,91 @@
     <h2 class="st" style="margin-bottom:2rem">Backed by <em>Global Investors</em></h2>
     <p style="font-size:1.1rem;line-height:1.8;color:rgba(245,240,232,.7)">Tatu City is a project of Rendeavour, Africa's largest urban land developer, with backing from CDC Group (UK), IFC (World Bank), and the U.S. International Development Finance Corporation.</p>
     <div style="display:flex;justify-content:center;gap:3rem;margin-top:3rem;flex-wrap:wrap">
-      <div style="text-align:center"><div style="font-size:2rem;color:var(--au)">$1.2B+</div><div>Development Value</div></div>
-      <div style="text-align:center"><div style="font-size:2rem;color:var(--au)">30,000+</div><div>Acres Across Africa</div></div>
-      <div style="text-align:center"><div style="font-size:2rem;color:var(--au)">8</div><div>New Cities</div></div>
+      <div style="text-align:center"><div style="font-size:2.5rem;font-family:var(--fd);color:var(--au)">$1.2B+</div><div style="color:rgba(245,240,232,.6);">Development Value</div></div>
+      <div style="text-align:center"><div style="font-size:2.5rem;font-family:var(--fd);color:var(--au)">30,000+</div><div style="color:rgba(245,240,232,.6);">Acres Across Africa</div></div>
+      <div style="text-align:center"><div style="font-size:2.5rem;font-family:var(--fd);color:var(--au)">8</div><div style="color:rgba(245,240,232,.6);">New Cities</div></div>
     </div>
   </div>
 </section>
 
 <section id="cta">
-  <div class="cta-bg"></div>
+  <div class="cta-bg" aria-hidden="true"></div>
   <div class="sl-tag rv" style="justify-content:center;color:#fff">Make the Smart Choice</div>
   <h2 class="cta-t rv">Ready to Experience<br>the Tatu City Difference?</h2>
   <p class="cta-s rv">Book a site visit and see Africa's leading new city for yourself.</p>
   <div class="cta-acts">
     <a href="contact.html" class="btn-wh hoverable">Book a Site Visit</a>
-    <a href="https://wa.me/741551669" class="btn-wh-ol hoverable">💬 WhatsApp</a>
+    <a href="https://wa.me/254741551669" class="btn-wh-ol hoverable" target="_blank" rel="noopener">💬 WhatsApp</a>
   </div>
 </section>
 
 </main>
 
-<footer id="footer">
+<footer id="footer" role="contentinfo">
   <div class="ft-in">
-    <div class="nl-strip"><h4>Stay Updated with Tatu City</h4><form class="nl-f"><input class="nl-i" type="email" placeholder="Your email"><button class="nl-btn hoverable">Subscribe</button></form></div>
-    <div class="ft-top">
-      <div><svg width="60" height="49" viewBox="0 0 80 65"><ellipse cx="40" cy="18" rx="22" ry="15" fill="#e8521a"/><ellipse cx="26" cy="24" rx="14" ry="10" fill="#e8521a"/><ellipse cx="54" cy="24" rx="14" ry="10" fill="#e8521a"/><rect x="36" y="34" width="8" height="16" fill="#c9420a" rx="1.5"/><rect x="24" y="48" width="32" height="4" fill="#c9420a" rx="2"/></svg><div class="ft-nm">TATU<s>.</s>CITY</div><div class="ft-tag">Live &middot; Work &middot; Play</div></div>
-      <div><div class="ft-ct">Properties</div><ul class="ft-ul"><li><a href="kijani-ridge.html">Kijani Ridge</a></li><li><a href="jabali-towers.html">Jabali Towers</a></li><li><a href="porini-point.html">Porini Point</a></li></ul></div>
-      <div><div class="ft-ct">Explore</div><ul class="ft-ul"><li><a href="why-tatu.html">Why Tatu</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="news.html">News</a></li></ul></div>
-      <div><div class="ft-ct">Contact</div><ul class="ft-ul"><li><a href="tel:+254205131000">+254 20 513 1000</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    <div class="nl-strip">
+      <h4>Stay Updated with Tatu City</h4>
+      <form class="nl-f" id="newsletterForm">
+        <input class="nl-i" type="email" placeholder="Your email address" aria-label="Email" autocomplete="email" required/>
+        <button class="nl-btn hoverable" type="submit">Subscribe</button>
+      </form>
     </div>
-    <div class="ft-bot"><div class="ft-copy">&copy; 2026 Tatu City Ltd.</div><div class="ft-cred">Made with ✦ by Dw33pY</div></div>
+    <div class="ft-top">
+      <div>
+        <svg width="60" height="49" viewBox="0 0 80 65" fill="none" aria-label="Tatu City logo" role="img">
+          <ellipse cx="40" cy="18" rx="22" ry="15" fill="#e8521a"/>
+          <ellipse cx="26" cy="24" rx="14" ry="10" fill="#e8521a"/>
+          <ellipse cx="54" cy="24" rx="14" ry="10" fill="#e8521a"/>
+          <rect x="36" y="34" width="8" height="16" fill="#c9420a" rx="1.5"/>
+          <rect x="24" y="48" width="32" height="4" fill="#c9420a" rx="2"/>
+        </svg>
+        <div class="ft-nm">TATU<s>.</s>CITY</div>
+        <div class="ft-tag">Live &middot; Work &middot; Play</div>
+        <p class="ft-desc">Africa's leading 5,000-acre new city — Kenya's first operational Special Economic Zone, 30 minutes from Nairobi. A project of Rendeavour.</p>
+        <div class="ft-soc">
+          <a href="https://twitter.com/Tatu_City" class="fs hoverable" target="_blank" rel="noopener" aria-label="Twitter">𝕏</a>
+          <a href="https://www.facebook.com/TatuCity" class="fs hoverable" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          <a href="https://www.instagram.com/tatu_city/" class="fs hoverable" target="_blank" rel="noopener" aria-label="Instagram">◈</a>
+          <a href="https://www.youtube.com/@TatuCity" class="fs hoverable" target="_blank" rel="noopener" aria-label="YouTube">▶</a>
+          <a href="https://wa.me/254741551669" class="fs hoverable" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+        </div>
+        <div style="margin-top:1.5rem;font-family:var(--fs);font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(122,122,110,.4)">A Development By<br><span style="font-size:.8rem;font-weight:700;letter-spacing:.12em;color:rgba(245,240,232,.25)">RENDEAVOUR</span></div>
+      </div>
+      <div>
+        <div class="ft-ct">Properties</div>
+        <ul class="ft-ul">
+          <li><a href="kijani-ridge.html">Kijani Ridge</a></li>
+          <li><a href="jabali-towers.html">Jabali Towers</a></li>
+          <li><a href="porini-point.html">Porini Point</a></li>
+          <li><a href="now-selling.html">Kofinaf Residences</a></li>
+          <li><a href="now-selling.html">The Link</a></li>
+          <li><a href="business.html">Business Locations</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-ct">Explore</div>
+        <ul class="ft-ul">
+          <li><a href="why-tatu.html">Why Choose Tatu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="news.html">News & Media</a></li>
+          <li><a href="tatu-reach.html">Tatu Reach (CSR)</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-ct">Contact</div>
+        <ul class="ft-ul">
+          <li><a href="tel:+254205131000">+254 20 513 1000</a></li>
+          <li><a href="tel:+254708555555">+254 708 555 555</a></li>
+          <li><a href="mailto:info@tatucity.com">info@tatucity.com</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <div class="ft-copy">&copy; 2026 Tatu City Ltd. A Rendeavour Development. All rights reserved.</div>
+      <div class="ft-cred">Made with  by <a href="https://dw33py.netlify.app" target="_blank" rel="noopener">Dw33pY</a></div>
+    </div>
   </div>
 </footer>
 
